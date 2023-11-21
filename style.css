@@ -1,0 +1,181 @@
+.all-content .navbar {
+  background-color: rgb(246, 86, 86);
+  
+}
+.navbar li a {
+  color: white;
+  font-weight: 700;
+}
+.navbar li a:hover {
+  transform: scale(0.9);
+}
+
+.naver {
+  margin-left: 25%;
+  gap: 60px;
+}
+.navbar .dropdown-menu {
+  background-color: rgb(246, 86, 86);
+}
+.content h3 {
+  color: brown;
+  font-weight: 900;
+  font-size: 60px;
+}
+.content h2 {
+  color: burlywood;
+}
+.content p {
+  color: brown;
+}
+.content button {
+  border: none;
+  color: white;
+  background-color: rgb(246, 86, 86);
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  
+}
+.content button:hover {
+  transform: scale(0.9);
+  background-color: brown;
+}
+.content img {
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.home {
+  background-image: url(image/sssbackg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 100%;
+  margin-left: 9px;
+}
+marquee{
+  background-color: brown;
+  color: white;
+  height: 60px;
+  text-align: center;
+  margin-top: 40px;
+} 
+.delivery h4{
+  display: inline;
+  
+  
+}
+ion-icon {
+  color: white;
+  font-size: 30px;
+}
+.imagg img {
+  width: 70%;
+}
+.sameDay {
+  background-color: rgb(246, 86, 86);
+  color: white;
+  padding: 10px;
+}
+.ck .card img {
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.banner {
+  margin-top: 10%;
+  
+  background-image: url(image/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  
+}
+#product-cards .btn {
+  background-color: brown;
+}
+#product-cards .Abtn {
+  border: none;
+  background-color: brown;
+  border-radius: 7px;
+  width: 90px;
+  height: 30px;
+  color: white;
+}
+#product-cards .star i {
+  color: gold;
+}
+#product-cards h3,
+h1 {
+  color: rgb(49, 10, 10);
+}
+#gallery h3 {
+  color: rgb(49, 10, 10);
+}
+ #bt button{
+  border: 2px solid brown;
+  background: none;
+  width: 120px;
+  height: 40px;
+  color: brown;
+}
+#bt button:hover {
+  background: brown;
+  color: white;
+}
+.form-group input{
+border: 2px solid brown;
+color: brown;
+
+}
+.form-group input::placeholder {
+  color: brown;
+}
+.form-group input:focus {
+  outline: none;
+}
+.form-group textarea {
+  border: 2px solid brown;
+  color: brown;
+}
+.form-group textarea::placeholder {
+  color: brown;
+}
+#messagebtn button{
+  border: none;
+  border-radius: 8px;
+  background: brown;
+  width: 120px;
+  height: 40px;
+  color: white;
+}
+#messagebtn button:hover {
+  background: rgb(207, 91, 91);
+  color: white;
+}
+footer {
+  background: brown;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .home {
+    margin-left: 1px;
+  }
+}
+  
+
