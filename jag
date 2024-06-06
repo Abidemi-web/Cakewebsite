@@ -1,0 +1,100 @@
+ <div class="all-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md fixed-top" id="navbar">
+            <!-- Brand -->
+            <a class="navbar-brand" style="color: brown; font-size: 30px; font-weight: 700; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" href="#" id="logo"><img src="./image/bake logo.png" alt="" width="120px"><span style="color: white;"></span> </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><img src="./image/menu.png" alt="" width="30px"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+              <ul class="navbar-nav naver">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                     Category
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Birthday Cake</a>
+                        <a href="#" class="dropdown-item">Chocolate Cake</a>
+                        <a href="#" class="dropdown-item">Party Cake</a>
+                        <a href="#" class="dropdown-item">Slice Cake</a>
+                        <a href="#" class="dropdown-item">Cup Cake</a>
+                    </div>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galary</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            
+                <!-- <img src="./image/add.png" alt="" width="24px"> -->
+            
+          </nav>
+          <!-- nav end -->
+          <a href="/visacard/visa.html"></a>
+    </div>
+    // title: "Thank you",
+                // text: "Your order will be delivered in 30minutes ",
+
+
+
+
+
+
+
+    import Swal from 'sweetalert2'
+
+const inputValue = 345.67
+const inputStep = 0.01
+
+Swal.fire({
+  title: 'input[number] + input[range]',
+  html: `
+    <input
+      type="number"
+      value="${inputValue}"
+      step="${inputStep}"
+      class="swal2-input"
+      id="range-value">`,
+  input: 'range',
+  inputValue,
+  inputAttributes: {
+    min: '0',
+    max: '1000',
+    step: inputStep.toString(),
+  },
+  didOpen: () => {
+    const inputRange = Swal.getInput()!
+    const inputNumber = Swal.getPopup()!.querySelector('#range-value') as HTMLInputElement
+
+    // remove default output
+    Swal.getPopup()!.querySelector('output')!.style.display = 'none'
+    inputRange.style.width = '100%'
+
+    // sync input[type=number] with input[type=range]
+    inputRange.addEventListener('input', () => {
+      inputNumber.value = inputRange.value
+    })
+
+    // sync input[type=range] with input[type=number]
+    inputNumber.addEventListener('change', () => {
+      inputRange.value = inputNumber.value
+    })
+  },
+})
+
+    

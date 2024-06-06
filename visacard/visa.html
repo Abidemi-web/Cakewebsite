@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="visa.css">
+  <script src="sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+  <div class="content">
+    <div class="header">
+      <img src="../visacard/download.jpg">
+      <h1>VISA</h1>
+      <div class="parag">
+      <p id="cardNum1">0000</p>
+      <p id="cardNum2">0000</p>
+      <p id="cardNum3">0000</p>
+      <p id="cardNum4">0000</p> 
+      </div>
+      <div class="bod">
+      <div class="holder">
+        <p style="font-size: 15px;">CARD HOLDER </p> <br>
+        <p id="cardhold">your name</p>
+      </div>
+      <div class="expire">
+        <p>EXPIRES</p> <br>
+        <p  id="expiredate" style="display: inline;">00</p><span style="color: rgba(255, 255, 255, 0.442);">/</span><p id="expiredate2" style="display: inline;">00</p>
+      </div>
+      </div>
+     
+    </div>
+    <p id="error">Please kindly enter your details</p>
+    <div class="into">
+  <div class="cal">
+  <label class="lab" for="inpute">CARD NUMBER</label> <br>
+  <div class="inpute">
+  <input type="text" id="cardInput1">
+  <input type="text" id="cardInput2">
+  <input type="text" id="cardInput3">
+  <input type="text" id="cardInput4"> <br> <br>
+  </div>
+  </div>
+  <div class="chold">
+  <label>CARDHOLDER</label><br>
+  <input type="text" id="cardholder" class="choldip"> <br> <br>
+  </div> 
+  <div class="expir">
+  <label>EXPIRE DATE</label>
+  <div class="expip">
+  <input type="number" min="1" max="12" id="number1"> 
+  <input type="number" min="1" max="32" id="number2"> 
+
+  </div>
+  <div class="cvv">
+  <label>CVV</label>
+  <div class="expip2">
+  <input type="text" id="number1"> 
+  </div>
+  </div>
+  <div class="chold">
+    <label>Amount</label><br>
+    <input type="text" id="cardholders" class="choldip"> <br> <br>
+    </div> 
+  <br>
+
+  <input type="submit" id="submitbtn" class="submitt" value="Pay">
+  
+  <p style="color: black; margin-top: 20px; font-size: 20px; text-align: center;" id="details"></p>
+    </div>
+  </div>
+  
+
+  <script src="../visacard/visa.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

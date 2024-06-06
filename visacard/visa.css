@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+body{
+  background-image: url(/image/image.png);
+}
+.content{
+  background-color: #FFFFFF ;
+  box-shadow: -5px 1px 5px 0px rgba(0,0,0,0.75);
+  padding: 10px;
+  margin-top: 2px;
+  border-radius: 10px;
+  width: 35%;
+  margin-left: 30%;
+  border: 1px solid #5E0B51;
+}
+.header {
+  background: #5E0B51;
+background: linear-gradient(to top right,  #723619 36%, #42220e 54%, #c8793d 73%);
+  margin-top: 30px;
+  width: 80%;
+  margin-left: 15px;
+  padding: 20px;
+  border-radius: 17px;
+  box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+  z-index: 4;
+  
+}
+.header img {
+  width: 50px;
+  border-radius: 6px;
+  margin-top: 0;
+  margin-left: 5px;
+}
+.header h1 {
+  float: right;
+  margin-top: 5px;
+  color: white;
+  margin-right: 10px;
+}
+.header .parag {
+  display: flex;
+  gap: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.header .bod {
+  display: flex;
+  gap: 140px;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.442);
+}
+
+.into {
+  background-color: #FFFFFF ;
+  /* box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75); */
+  padding: 10px;
+  margin-top: 2px;
+  border-radius: 10px;
+}
+
+input {
+  font-size: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+input:focus {
+  outline: #5E0B51;
+}
+label {
+  color: #42220e;
+}
+
+
+.into .inpute {
+  margin-left: 60px;
+  margin-top: 90px;
+  width: 70px;
+  display: inline;
+}
+.into .inpute input {
+  height: 30px;
+  width: 70px;
+  border-radius: 4px;
+  border: 2px solid #8e3a05;
+  margin-top: 0px;
+  box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+  
+}
+.into .lab {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+.cal {
+  margin-top: 10px;
+  margin-left: -39px;
+}
+.into .chold {
+  margin-left: 20px;
+}
+.chold .choldip {
+  width: 87%;
+  height: 30px;
+  border: 2px solid #8e3a05;
+  box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.into .expir {
+  margin-left: 20px;
+}
+.expir .expip input{
+  width: 70px;
+  border: 2px solid #8e3a05;
+  height: 30px;
+  box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+  border-radius: 4px;
+}
+.cvv {
+  margin-left: 65%;
+  margin-top: -48px;
+}
+.cvv .expip2 input{
+  width: 70px;
+  border: 2px solid #8e3a05;
+  height: 30px;
+  box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+  
+}
+.submitt {
+  width: 90%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  background: linear-gradient(to top right,  #723619 36%, #42220e 54%, #c8793d 73%);
+}
+.submitt:hover {
+  transform: scale(0.9);
+}
+#error{
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  display: none;
+}
+@media (max-width: 1180px) {
+  .content {
+    width: 80%;
+    margin: 18px;
+  }
+}

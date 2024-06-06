@@ -1,7 +1,83 @@
-.all-content .navbar {
-  background-color: rgb(246, 86, 86);
+/* .all-content .navbar {
+  background-color: #42220e;
+  color: #5a2c11 #723619 #c8793d;
+  
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* header */
+header {
+  background-color: #42220e;
+  box-shadow: -1px 0px 5px 2px rgba(212, 206, 206, 0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px 10px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+header .logo img {
+  /* width: 5%; */
+}
+
+header nav  {
+display: flex;
+gap: 40px;
+
+
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
   
 }
+header a.active {
+  color: #f6a466;
+}
+header button {
+  padding: 10px;
+  width: 7rem;
+  transition: 0.5s;
+  color: white;
+  border-radius: 5px;
+}
+.login{
+border: 1px solid #e49c64;
+background-color: #42220e;
+color: #f6a466;
+font-size: 16px;
+}
+.login:hover {
+  background-color: #f6a466;
+  color: white;
+}
+.signup{
+  background-color: #f6a466;
+  font-size: 16px;
+  border: none;
+  color: #5a2c11;
+}
+.signup:hover {
+  background-color: #5a2c11;
+  color: white;
+}
+#open, #close {
+  display: none;
+}
+.logins, .signups {
+  display: none;
+}
+/* header */
+
 .navbar li a {
   color: white;
   font-weight: 700;
@@ -18,7 +94,7 @@
   background-color: rgb(246, 86, 86);
 }
 .content h3 {
-  color: brown;
+  color: #c34e06;
   font-weight: 900;
   font-size: 60px;
 }
@@ -30,8 +106,9 @@
 }
 .content button {
   border: none;
+  border-radius: 10px;
   color: white;
-  background-color: rgb(246, 86, 86);
+  background-color: #c75813;
   width: 160px;
   height: 40px;
   text-align: center;
@@ -63,13 +140,13 @@
   background-image: url(image/sssbackg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+  /* border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px; */
   width: 100%;
-  margin-left: 9px;
+  
 }
 marquee{
-  background-color: brown;
+  background-color: #5a2c11;
   color: white;
   height: 60px;
   text-align: center;
@@ -88,9 +165,9 @@ ion-icon {
   width: 70%;
 }
 .sameDay {
-  background-color: rgb(246, 86, 86);
+  background-color: #723619;
   color: white;
-  padding: 10px;
+  
 }
 .ck .card img {
   border-top-right-radius: 30px;
@@ -106,13 +183,13 @@ ion-icon {
   
 }
 #product-cards .btn {
-  background-color: brown;
+  background-color: #723619;
 }
 #product-cards .Abtn {
   border: none;
-  background-color: brown;
+  background-color: #723619;
   border-radius: 7px;
-  width: 90px;
+  width: 120px;
   height: 30px;
   color: white;
 }
@@ -121,45 +198,47 @@ ion-icon {
 }
 #product-cards h3,
 h1 {
-  color: rgb(49, 10, 10);
+  color: #5a2c11;
 }
-#gallery h3 {
-  color: rgb(49, 10, 10);
+.overlay h3 {
+  color: #5a2c11;
 }
  #bt button{
-  border: 2px solid brown;
+  border: 2px solid #5a2c11;
   background: none;
   width: 120px;
   height: 40px;
-  color: brown;
+  color: #5a2c11;
+  border-radius: 10px;
+  transform: 0.3s;
 }
 #bt button:hover {
-  background: brown;
+  background: #5a2c11;
   color: white;
 }
 .form-group input{
-border: 2px solid brown;
+border: 2px solid #5a2c11;
 color: brown;
 
 }
 .form-group input::placeholder {
-  color: brown;
+  color: #723619;
 }
 .form-group input:focus {
   outline: none;
 }
 .form-group textarea {
-  border: 2px solid brown;
-  color: brown;
+  border: 2px solid #723619;
+  color: #c8793d;
 }
 .form-group textarea::placeholder {
-  color: brown;
+  color: #c8793d;
 }
 #messagebtn button{
   border: none;
   border-radius: 8px;
-  background: brown;
-  width: 120px;
+  background: #5a2c11;
+  width: 130px;
   height: 40px;
   color: white;
 }
@@ -167,14 +246,166 @@ color: brown;
   background: rgb(207, 91, 91);
   color: white;
 }
+.textimonial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
+  
+}
+.text {
+  box-shadow: -1px 0px 5px 0px #723619;
+  padding: 20px;
+  background-color: #723619;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Open Sans';
+}
+.profile {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  color: hsl(0, 0%, 100%);
+}
+.text img {
+  width: 40px;
+  border-radius: 100px;
+}
+
 footer {
-  background: brown;
+  background: #42220e;
   color: white;
+}
+
+@media  (max-width: 1000px) {
+  #open {
+    position: relative;
+  }
+  
+ header  nav {
+   display: none; 
+position: absolute;
+background-color: #723619;
+color: white;
+top: 0;
+left: 0;
+right: 0;
+height: 100vh;
+transition: 0.6s;
+flex-direction: column;
+padding-top: 100px;
+padding-left: 50px;
+font-size: 40px;
+  }
+  nav a {
+    display: block;
+  }
+  .logins, .signups {
+    display: inline;
+    width: 290px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #c34e06;
+    border: none;
+    font-size: 25px;
+  }
+  .activity {
+    display: block;
+  }
+
+  header {
+    padding: 20px;
+  }
+  
+  header .logo img {
+    width: 90%;
+  }
+   .signup, .login {
+    display: none;
+  }
+ header ion-icon {
+    color: #8B20BB;
+    font-size: 60px;
+    display: block;
+    position: relative;
+  }
+  
+  header button{
+    display: block;
+  }
+  header #close {
+    display: none;
+    background-color: none;
+  }
+  header #open {
+    display: block;
+    background: none;
+  }
 }
 
 @media (max-width: 991px) {
   .home {
     margin-left: 1px;
+  }
+}
+@media (max-width: 768px) {
+  
+  .content h3, .content h2, .content p, .content button{
+    text-align: center;
+  }
+  .ck img {
+    width: 50%;
+    
+  }
+  .ck .card {
+    border: none;
+    align-items: center;
+  }
+  .logo .img {
+     width: 60px; 
+  }
+  header nav {
+    font-size: 25px;
+   }
+   .logins, .signups {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px;
+    width: 170px;
+   }
+  
+
+   /* .activity {
+    display: block;
+  
+  }  */
+  header {
+    padding: 15px;
+  }
+  header .logo img {
+    width: 50%;
+  }
+   .signup, .login {
+    display: none;
+  }
+ header ion-icon {
+    color: #8B20BB;
+    font-size: 40px;
+    display: block;
+    position: relative;
+  }
+  
+  header button{
+    display: block;
+  }
+  header #close {
+    display: none;
+    background-color: none;
+  }
+  header #open {
+    display: block;
+    background: none;
   }
 }
   
