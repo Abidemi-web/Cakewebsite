@@ -36,8 +36,26 @@ background-color: #42220e;
 height: 100vh;
 }
 #start img {
-  transform: translate(120%, 120%);
-      margin: 15% 40%;
+ margin-top: 20%;
+ margin-left: 40%;
+}
+@media (max-width: 768px) {
+  #start{
+    height: 135vh;
+  }
+  #start img {
+  margin-top: 60%;
+  margin-left: 100px;
+}
+}
+@media (max-width: 368px) {
+  #start{
+    height: 100vh;
+  }
+  #start img {
+  margin-top: 60%;
+  margin-left: 60px;
+}
 }
   </style>
 </head>
@@ -48,16 +66,16 @@ height: 100vh;
         </main>
 
 
-        <script>
+         <script>
           let start = document.getElementById('start');
  let display = document.getElementById('display');
  setTimeout(function() {
   start.style.display = 'none';
   //  display.style.display = 'block';
-  location.href = "/Login/signup/signup.html"
+  location.href = "/cake.html"
   
  }, 5000);
-        </script>
+        </script> 
 
         
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

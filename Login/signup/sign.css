@@ -171,21 +171,15 @@ p{
   color: white;
 }
 @media (max-width: 780px) {
-  /* .form{
-  width: 500px;
-  height: 480px;
-  background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-  position: absolute;
-  text-align: center;
-  right: 1%;
-  left: 0;
-  border-radius: 10px;
-  padding: 25px;
-  
-} */
 
 
 
+.form {
+  width: 100%;
+}
+.Abide {
+  width: 100%;
+}
 
 
 }
